@@ -7,13 +7,17 @@ print("¡Hola Mundo!")
 
 # 2. UNA VARIABLE (guarda un dato)
 nombre = "Ana"
+print("La variable nombre vale:", nombre)  # "Ana"
 
-# 3. INPUT (pedirle algo al usuario)
+# 3. INPUT (pedirle algo al usuario, reemplaza el valor anterior)
 nombre = input("¿Cómo te llamas? ")
 
-# 4. PRINT con la variable
-print("¡Hola,", nombre, "!")
+# 4. F-STRING (forma moderna de incluir variables dentro de un texto)
+print(f"¡Hola, {nombre}!")
 
-# 5. EVAL (convierte texto a número para operar)
+# 5. EVAL (convierte texto a número para operar, igual que int() pero más flexible)
+#    eval("42")    → 42   (entero)
+#    eval("3.14")  → 3.14 (decimal)
+#    eval("2 + 2") → 4    (¡incluso evalúa expresiones!)
 edad = eval(input("¿Cuántos años tienes? "))
-print("En 10 años tendrás", edad + 10, "años")
+print(f"En 10 años tendrás {edad + 10} años")
