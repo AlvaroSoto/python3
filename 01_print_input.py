@@ -15,13 +15,13 @@ nombre = input("¿Cómo te llamas? ")
 # 4. F-STRING (forma moderna de incluir variables dentro de un texto)
 print(f"¡Hola, {nombre}!")
 
-# 5. EVAL (convierte texto a número para operar, igual que int/float pero más flexible)
-#    eval("42")    → 42   (entero)
-#    eval("3.14")  → 3.14 (decimal)
-#    eval("2 + 2") → 4    (¡incluso evalúa expresiones matemáticas en el texto!)
-# 
-# ⚠️ IMPORTANTE: Aunque eval() es útil para aprender o probar, es MUY RIESGOSO usarlo con 
-#    lo que ingresa el usuario (input). Si el usuario escribe código malicioso, eval() lo ejecutará.
-#    En la vida real, para números siempre es preferible usar int() para enteros o float() para decimales.
-edad = eval(input("¿Cuántos años tienes? (puedes escribir 20 o 10+10) "))
+# 5. CONVERSIÓN DE DATOS (int/float)
+#    Para operar matemáticamente, convertimos el texto a número de forma segura.
+edad = int(input("¿Cuántos años tienes? "))
 print(f"En 10 años tendrás {edad + 10} años")
+
+# ⚠️ NOTA SOBRE EVAL():
+# Se puede usar eval() para calcular expresiones en texto, por ejemplo:
+resultado_eval = eval("10 + 10") 
+# Pero es MUY RIESGOSO usarlo directamente con input() porque un usuario 
+# podría escribir código malicioso que eval() ejecutaría en tu computadora.
