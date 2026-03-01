@@ -13,31 +13,31 @@ print("============================")
 
 antes = numero_base
 numero_base += valor_operacion
-print(f"numero_base += {valor_operacion}    →   era {antes}, ahora es = {numero_base}")
+print(f"numero_base += {valor_operacion}    ->   era {antes}, ahora es = {numero_base}")
 
 numero_base = antes
 numero_base -= valor_operacion
-print(f"numero_base -= {valor_operacion}    →   era {antes}, ahora es = {numero_base}")
+print(f"numero_base -= {valor_operacion}    ->   era {antes}, ahora es = {numero_base}")
 
 numero_base = antes
 numero_base *= valor_operacion
-print(f"numero_base *= {valor_operacion}    →   era {antes}, ahora es = {numero_base}")
+print(f"numero_base *= {valor_operacion}    ->   era {antes}, ahora es = {numero_base}")
 
 numero_base = antes
 numero_base **= valor_operacion
-print(f"numero_base **= {valor_operacion}   →   era {antes}, ahora es = {numero_base}")
+print(f"numero_base **= {valor_operacion}   ->   era {antes}, ahora es = {numero_base}")
 
 # Nota: Las siguientes operaciones de división fallarán (ZeroDivisionError) si valor_operacion es 0.0
 numero_base = antes
 numero_base /= valor_operacion
-print(f"numero_base /= {valor_operacion}    →   era {antes}, ahora es = {numero_base}")
+print(f"numero_base /= {valor_operacion}    ->   era {antes}, ahora es = {numero_base}")
 
 numero_base = antes
 numero_base //= valor_operacion
-print(f"numero_base //= {valor_operacion}   →   era {antes}, ahora es = {numero_base}")
+print(f"numero_base //= {valor_operacion}   ->   era {antes}, ahora es = {numero_base}")
 
 numero_base = antes
 numero_base %= valor_operacion
-print(f"numero_base %= {valor_operacion}    →   era {antes}, ahora es = {numero_base}")
+print(f"numero_base %= {valor_operacion}    ->   era {antes}, ahora es = {numero_base}")
 
 print("============================")
