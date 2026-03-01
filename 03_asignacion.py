@@ -6,37 +6,38 @@
 # en la misma variable. Es un atajo:
 # x += 5  es igual a escribir  x = x + 5
 
-x = float(input("Ingresa el número base: "))
-n = float(input("Ingresa el número para operar: "))
+numero_base = float(input("Ingresa el número base: "))
+valor_operacion = float(input("Ingresa el número para operar: "))
 
 print("============================")
 
-antes = x
-x += n
-print(f"x += {n}    →   x era {antes},  ahora x = {x}")
+antes = numero_base
+numero_base += valor_operacion
+print(f"numero_base += {valor_operacion}    →   era {antes}, ahora es = {numero_base}")
 
-x = antes
-x -= n
-print(f"x -= {n}    →   x era {antes},  ahora x = {x}")
+numero_base = antes
+numero_base -= valor_operacion
+print(f"numero_base -= {valor_operacion}    →   era {antes}, ahora es = {numero_base}")
 
-x = antes
-x *= n
-print(f"x *= {n}    →   x era {antes},  ahora x = {x}")
+numero_base = antes
+numero_base *= valor_operacion
+print(f"numero_base *= {valor_operacion}    →   era {antes}, ahora es = {numero_base}")
 
-x = antes
-x **= n
-print(f"x **= {n}   →   x era {antes},  ahora x = {x}")
+numero_base = antes
+numero_base **= valor_operacion
+print(f"numero_base **= {valor_operacion}   →   era {antes}, ahora es = {numero_base}")
 
-x = antes
-x /= n
-print(f"x /= {n}    →   x era {antes},  ahora x = {x}")
+# Nota: Las siguientes operaciones de división fallarán (ZeroDivisionError) si valor_operacion es 0.0
+numero_base = antes
+numero_base /= valor_operacion
+print(f"numero_base /= {valor_operacion}    →   era {antes}, ahora es = {numero_base}")
 
-x = antes
-x //= n
-print(f"x //= {n}   →   x era {antes},  ahora x = {x}")
+numero_base = antes
+numero_base //= valor_operacion
+print(f"numero_base //= {valor_operacion}   →   era {antes}, ahora es = {numero_base}")
 
-x = antes
-x %= n
-print(f"x %= {n}    →   x era {antes},  ahora x = {x}")
+numero_base = antes
+numero_base %= valor_operacion
+print(f"numero_base %= {valor_operacion}    →   era {antes}, ahora es = {numero_base}")
 
 print("============================")

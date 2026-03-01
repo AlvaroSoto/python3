@@ -12,6 +12,8 @@ suma        = a + b    # Suma
 resta       = a - b    # Resta
 multi       = a * b    # Multiplicación
 potencia    = a ** b   # Potenciación (a elevado a b)
+
+# Nota: Las siguientes 3 operaciones fallarán (dando el error 'ZeroDivisionError') si el usuario ingresa 0 en b
 div_real    = a / b    # División real (con decimales)
 div_entera  = a // b   # División entera (sin decimales)
 resto       = a % b    # Resto o módulo (lo que sobra de dividir)
