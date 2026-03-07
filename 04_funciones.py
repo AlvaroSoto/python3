@@ -53,11 +53,11 @@ print("round(numero, decimales)")
 print(separador)
 
 print(round(3.14159))        # 3
-print(round(3.14159, 2))     # 3.14
+print(round(3.14159, 2))     # 3.14 # type: ignore
 print(round(3.14159, 4))     # 3.1416
 print(round(2.5))            # 2  <- Python usa "redondeo bancario" (al par más cercano)
 print(round(3.5))            # 4
-print(round(-2.675, 2))      # -2.67  <- cuidado con la precisión del float
+print(round(-2.675, 2))      # -2.67  <- cuidado con la precisión del float # type: ignore
 
 
 # ============================================
